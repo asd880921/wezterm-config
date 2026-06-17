@@ -26,6 +26,10 @@ local keys = {
   { key = "c", mods = "CTRL|SHIFT", action = act.CopyTo("Clipboard") },
   { key = "v", mods = "CTRL|SHIFT", action = act.PasteFrom("Clipboard") },
 
+  -- Shift+Enter 換行（給 Claude CLI 等 TUI 用）：送出 Alt+Enter(ESC+CR)，
+  -- 不需要 enable_kitty_keyboard，因此不會干擾中文輸入法。
+  { key = "Enter", mods = "SHIFT", action = act.SendString("\x1b\r") },
+
   -- tabs --
   -- tabs: spawn+close
   { key = "t", mods = mod.SUPER, action = act.SpawnTab("DefaultDomain") },

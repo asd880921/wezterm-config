@@ -9,14 +9,17 @@ return {
   front_end = "OpenGL", --OpenGL or WebGpu
   webgpu_power_preference = "HighPerformance",
 
-  enable_kitty_keyboard = true,
+  -- NOTE: enable_kitty_keyboard 會破壞 Windows 中文輸入法的組字 commit（掉字/Enter 送不進去），
+  -- 改用下方 bindings 裡的 Shift+Enter -> Alt+Enter 來達成 Claude CLI 換行。
+  enable_kitty_keyboard = false,
+  use_ime = true,
 
   -- color scheme
   -- colors = colors,
   color_scheme = "Gruvbox dark, medium (base16)",
 
   -- background
-  window_background_opacity = 0.2,
+  window_background_opacity = 0,
   win32_system_backdrop = "Disable",
   window_background_gradient = {
     colors = { "#1D261B", "#261A25" },
@@ -26,13 +29,13 @@ return {
   background = {
     {
       source = { File = wezterm.config_dir .. "/backdrops/space.jpg" },
-      opacity = 0.65,
+      opacity = 0.7,
     },
     {
       source = { Color = "#0a0f1a" },
       height = "100%",
       width = "100%",
-      opacity = 0.85,
+      opacity = 0.7,
     },
   },
 

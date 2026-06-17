@@ -1,11 +1,14 @@
 local wezterm = require("wezterm")
 local platform = require("utils.platform")
 
-local font = "JetBrainsMono NF"
-local font_size = 11.5
+local font_size = 12
 
 return {
-  font = wezterm.font(font),
+  font = wezterm.font_with_fallback({
+    "JetBrainsMono NF", --主要英文字體
+    "Consolas",
+    "Microsoft JhengHei", --主要中文字體
+  }),
   font_size = font_size,
 
   --ref: https://wezfurlong.org/wezterm/config/lua/config/freetype_pcf_long_family_names.html#why-doesnt-wezterm-use-the-distro-freetype-or-match-its-configuration
