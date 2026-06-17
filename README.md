@@ -14,11 +14,12 @@ WezTerm 的設定檔要直接放在 `wezterm` 資料夾底下，所以請先 clo
 
 ```powershell
 cd C:\Users\<user-name>\.config
-git clone https://github.com/asd880921/wezterm.git
+```
+```powershell
+https://github.com/asd880921/wezterm-config.git
 ```
 
 clone 完成後，最終路徑要是：
-
 ```
 C:\Users\<user-name>\.config\wezterm
 ```
