@@ -6,25 +6,12 @@
 
 ## 安裝步驟
 
-### 1. Clone 到設定資料夾
+### 1. 將主題安裝至 WezTerm
 
-WezTerm 的設定檔要直接放在 `wezterm` 資料夾底下，所以請先 clone 到 `.config`，再把專案資料夾改名成 `wezterm`。
+- 開啟 `C:\Users\<user-name>\.config` 資料夾後，將專案直接 clone 到該路徑下 (或是直接下載專案然後解壓縮至該資料夾)。
 
-請將 `<user-name>` 換成你自己的 Windows 使用者名稱：
-
-```powershell
-cd C:\Users\<user-name>\.config
-```
-```powershell
-https://github.com/asd880921/wezterm-config.git
-```
-
-clone 完成後，最終路徑要是：
-```
-C:\Users\<user-name>\.config\wezterm
-```
-
-> 如果 clone 下來的資料夾名稱不是 `wezterm`，請手動改名成 `wezterm`。
+- 將 clone 或 下載的專案資料夾名稱從 `wezterm-config` 更改為 `wezterm`
+![資料夾](images/dir.png)
 
 ### 2. 安裝字體
 
