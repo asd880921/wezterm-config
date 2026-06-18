@@ -28,3 +28,4 @@
 
 想在任意資料夾直接開啟 WezTerm 視窗，可將 `assets` 內的 `wez.bat` 複製到 `C:\Program Files\WezTerm`，之後在該路徑輸入 `wez` 即可開啟。
 ![wez](docs/images/wez.png)
+![wez2](docs/images/wez2.png)
