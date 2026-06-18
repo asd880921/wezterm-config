@@ -15,7 +15,7 @@
 
 ### 2. 安裝字體
 
-打開 `ttf` 資料夾，安裝裡面的兩個字體（對字體檔案按右鍵 → 安裝）：
+打開 `assets` 資料夾，安裝裡面的兩個字體（對字體檔案按右鍵 → 安裝）：
 
 - `JetBrainsMonoNerdFont-Regular.ttf`
 - `MesloLGMNerdFont-Regular.ttf`
@@ -23,3 +23,8 @@
 ### 3. 開啟 WezTerm
 
 完成以上步驟後，開啟（或重新啟動）WezTerm 即可套用主題。
+
+### 補充
+
+想在任意資料夾直接開啟 WezTerm 視窗，可將 `assets` 內的 `wez.bat` 複製到 `C:\Program Files\WezTerm`，之後在該路徑輸入 `wez` 即可開啟。
+![資料夾](images/wez.png)

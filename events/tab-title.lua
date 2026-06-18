@@ -38,18 +38,26 @@ end
 
 M.set_title = function(process_name, static_title, active_title, max_width, inset)
   local title
-  inset = inset or 6
+  inset = inset or -10
+  local suffix = " ~ "
 
+  local base
   if static_title:len() > 0 then
-    title = utf8.char(0xf05b3) .. "  " .. static_title .. " ~ " .. " "
+    base = static_title
   else
-    title = utf8.char(0xf05b3) .. "  " .. active_title .. " ~ " .. " "
+    base = active_title
   end
 
-  if title:len() > max_width - inset then
-    local diff = title:len() - max_width + inset
-    title = wezterm.truncate_right(title, title:len() - diff)
+  title = utf8.char(0xe70f) .. "  " .. base
+
+  local display_width = wezterm.column_width(title)
+  local target_width = max_width - inset - wezterm.column_width(suffix)
+
+  if display_width > target_width then
+    title = wezterm.truncate_right(title, target_width)
   end
+
+  title = title .. suffix
 
   return title
 end
