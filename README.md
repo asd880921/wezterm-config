@@ -2,7 +2,7 @@
 
 我的個人 [WezTerm](https://wezfurlong.org/wezterm/) 設定與主題。
 
-![preview](images/preview.png)
+![preview](docs/images/preview.png)
 
 ## 安裝步驟
 
