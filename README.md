@@ -1,6 +1,7 @@
 # WezTerm 主題 / 設定
 
-> 本倉庫使用 [QianSong1/wezterm-config](https://github.com/QianSong1/wezterm-config) 為基底，進行修改與調整。
+> 本倉庫使用 [QianSong1/wezterm-config](https://github.com/QianSong1/wezterm-config) 為基底，進行修改與調整。  
+> 如果想使用圖中 Claude Cli 的 Hud，可至 [連結](https://github.com/asd880921/claude-cli-hud) 進行安裝。
 
 ![preview](docs/images/preview.png)
 
