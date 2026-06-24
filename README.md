@@ -1,5 +1,7 @@
 # WezTerm 主題 / 設定
 
+> 本倉庫使用 [QianSong1/wezterm-config](https://github.com/QianSong1/wezterm-config) 為基底，進行修改與調整。
+
 ![preview](docs/images/preview.png)
 
 ## 安裝步驟
