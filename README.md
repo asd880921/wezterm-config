@@ -15,10 +15,11 @@
 
 ### 2. 安裝字體
 
-打開 `assets` 資料夾，安裝裡面的兩個字體（對字體檔案按右鍵 → 安裝）：
+打開 `assets` 資料夾，安裝裡面的三個字體（對字體檔案按右鍵 → 安裝）：
 
 - `JetBrainsMonoNerdFont-Regular.ttf`
 - `MesloLGMNerdFont-Regular.ttf`
+- `SymbolsNerdFontMono-Regular.ttf`
 
 ### 3. 開啟 WezTerm
 

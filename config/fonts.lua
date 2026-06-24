@@ -8,6 +8,7 @@ return {
     "JetBrainsMono NF", --主要英文字體
     "Consolas",
     "Microsoft JhengHei", --主要中文字體
+    "Symbols Nerd Font Mono", --補齊缺漏的圖示碼點
   }),
   font_size = font_size,
 
