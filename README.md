@@ -1,10 +1,11 @@
-# WezTerm 主題設定
-
-我的個人 [WezTerm](https://wezfurlong.org/wezterm/) 設定與主題。
+# WezTerm 主題 / 設定
 
 ![preview](docs/images/preview.png)
 
 ## 安裝步驟
+
+### 0. 安裝 WezTerm
+- 連結：https://wezfurlong.org/wezterm/
 
 ### 1. 將主題安裝至 WezTerm
 
