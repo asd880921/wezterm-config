@@ -188,6 +188,20 @@ local mouse_bindings = {
     mods = "NONE",
     action = act.SelectTextAtMouseCursor("Word"),
   },
+  -- Right click: copy selection (and clear it) if any, otherwise paste
+  {
+    event = { Down = { streak = 1, button = "Right" } },
+    mods = "NONE",
+    action = wezterm.action_callback(function(window, pane)
+      local has_selection = window:get_selection_text_for_pane(pane) ~= ""
+      if has_selection then
+        window:perform_action(act.CopyTo("ClipboardAndPrimarySelection"), pane)
+        window:perform_action(act.ClearSelection, pane)
+      else
+        window:perform_action(act.PasteFrom("Clipboard"), pane)
+      end
+    end),
+  },
   -- Turn on the mouse wheel to scroll the screen
   {
     event = { Down = { streak = 1, button = { WheelUp = 1 } } },
